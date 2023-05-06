@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="../../css/base.css">
+   <link rel="stylesheet" href="../../css/vendor.css">  
+   <link rel="stylesheet" href="../../css/main.css">
+        
+
+   <!-- script
+   ================================================== -->
+	<script src="../../js/modernizr.js"></script>
+	<script src="../../js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../..favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+
+   		<div class="logo">
+	         <a href="../../index.html">Author</a>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation sf-menu">
+					<li><a href="../../index.html" title="">主页</a></li>									
+					<li class="has-children">
+						<a href="../../category.html" title="">分类</a>
+						<ul class="sub-menu">
+			            <li><a href="../../category.html">分类1</a></li>
+			            <li><a href="../../category.html">分类2</a></li>
+			            <li><a href="../../category.html">分类3</a></li>
+			            <li><a href="../../category.html">分类4</a></li>
+			            <li><a href="../../category.html">分类5</a></li>
+			            <li><a href="../../category.html">分类6</a></li>
+			         </ul>
+					</li>
+					<li class="has-children">
+						<a href="../../single-standard.html" title="">Blog</a>
+						<ul class="sub-menu">
+			            <li><a href="../../single-video.html">Video Post</a></li>
+			            <li><a href="../../single-audio.html">Audio Post</a></li>
+			            <li><a href="../../single-gallery.html">Gallery Post</a></li>
+			            <li><a href="../../single-standard.html">Standard Post</a></li>
+			         </ul>
+					</li>
+					<li><a href="../../style-guide.html" title="">样式</a></li>
+					<li class="has-children"><a href="../../about.html" title="">关于</a></li>	
+					<li><a href="../../contact.html" title="">Contact</a></li>										
+				</ul>
+			</nav> <!-- end main-nav-wrap -->
+
+			<div class="search-wrap">
+				
+				<form role="search" method="get" class="search-form" action="#">
+					<label>
+						<span class="hide-content">Search for:</span>
+						<input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+					</label>
+					<input type="submit" class="search-submit" value="Search">
+				</form>
+
+				<a href="#" id="close-search" class="close-btn">Close</a>
+
+			</div> <!-- end search wrap -->	
+
+			<div class="triggers">
+				<a class="search-trigger" href="#"><i class="fa fa-search"></i></a>
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+			</div> <!-- end triggers -->	
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+
+<!-- mark down
+   ================================================== -->
+
+
+
+
+   <!doctype html>
+      <html>
+      <head>
+        <meta charset="utf-8"/>
+        <title>Module_cube</title>
+        
+        <style>
+          html, body { margin: 0; padding: 0; background-color: #f5f5f5; }
+          .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; }
+          @media (max-width: 767px) { .markdown-body { padding: 15px; } }
+          .markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: system-ui, -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: #6a737d;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li, .markdown-body li > ul {
+  margin-top: .25em;
+}
+
+.markdown-body ul li.task-list-item {
+  position: relative;
+  appearance: none;
+  list-style: none;
+}
+
+.markdown-body ul li.task-list-item.checked {
+  text-decoration-line: line-through;
+  color: #6e6e6e;
+}
+
+.markdown-body ul li.task-list-item:not(.checked) {
+  color: initial;
+}
+
+.markdown-body ul li.task-list-item::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  border-radius: 2px;
+  border: 2px solid #757575;
+}
+
+.markdown-body ul li.task-list-item.checked::before {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.markdown-body ul li.task-list-item.checked::after {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+.markdown-body p > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body mark {
+  display: inline-flex;
+  background-color: #fff8c5;
+}
+          .ace-tm{ background: transparent!important; }.ace_static_highlight{ font-size: unset!important; }.ace_static_highlight {font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', 'Droid Sans Mono', monospace;font-size: 12px;white-space: pre-wrap}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;contain: none;}.ace_static_highlight.ace_show_gutter .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line { position: relative; }.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+        </style>
+      </head>
+      <body>
+        <article class="markdown-body">
+          <blockquote>
+<p>该项目没有使用pcb，全是飞线</p>
+</blockquote>
+<blockquote>
+<p>无法开源3d打印外壳的模型，因为集成模块的差异会导致最终成品的差异</p>
+</blockquote>
+<h1>Module_cube</h1>
+<p><img src="pic/modulecube.png" alt="pic"></p>
+<p><a href="https://www.bilibili.com/video/BV1c84y1Y7Qu/">b站视频演示</a></p>
+<p><a href="https://github.com/yukModule/Module_cube">Github项目地址</a></p>
+<h2>介绍</h2>
+<p><strong>项目</strong>概述:</p>
+<ul>
+<li>一个高颜值的透明小电视</li>
+<li>已实现功能如下
+<ul>
+<li>菜单选择</li>
+<li>主界面
+<ul>
+<li>当前时间</li>
+<li>当前气温</li>
+<li>当前天气</li>
+<li>当前湿度</li>
+<li>当前风速</li>
+</ul>
+</li>
+<li>日历</li>
+<li>五日温度曲线</li>
+<li>同步时间</li>
+<li>同步天气</li>
+</ul>
+</li>
+</ul>
+<h2>已知问题</h2>
+<p>当前已知且<strong>尚未解决</strong>的问题:</p>
+<ul>
+<li>同步时间会因为访问超时而报错，需要断电重启</li>
+<li>游戏功能还没做</li>
+</ul>
+<h2>技术协助</h2>
+<p>你可以在一下获得<strong>技术帮助</strong>:</p>
+<ul>
+<li><a href="https://github.com/yukModule/">GitHub</a></li>
+<li><a href="https://space.bilibili.com/22951795">B站</a></li>
+<li><a href="https://yukmodule.github.io/">git博客</a></li>
+</ul>
+<h2>参与作者</h2>
+<ul>
+<li>MkM
+<ul>
+<li>bilibili 无我识l心空妙有</li>
+</ul>
+</li>
+</ul>
+<h2>使用许可</h2>
+<p>在该项目中你必须遵守一下条款:</p>
+<ul>
+<li>随便用，有什么问题后果自负 (oﾟvﾟ)ノ</li>
+</ul>
+<h1>开发教程</h1>
+<h2>物料清单</h2>
+<ul>
+<li>esp32开发板 我使用的是 DOIT Esp32 DevKit v1 <s>其实都差不多</s></li>
+<li>小于2G的micro sd 卡</li>
+<li>tft-240x240 spi协议 st7789芯片的显示屏</li>
+<li>支持spi协议的读卡器模块</li>
+<li>mpu6050陀螺仪</li>
+</ul>
+<h2>硬件连接</h2>
+<table>
+<thead>
+<tr>
+<th>显示屏</th>
+<th>esp32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCL</td>
+<td>pin18</td>
+</tr>
+<tr>
+<td>SDA</td>
+<td>pin23</td>
+</tr>
+<tr>
+<td>RES</td>
+<td>pin15</td>
+</tr>
+<tr>
+<td>DC</td>
+<td>pin2</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>pin5</td>
+</tr>
+<tr>
+<td>BLC</td>
+<td>VIN(是否连接具体看屏幕手册)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>陀螺仪</th>
+<th>esp32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCL</td>
+<td>pin33</td>
+</tr>
+<tr>
+<td>SDA</td>
+<td>pin32</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>读卡器</th>
+<th>esp32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCK</td>
+<td>pin22</td>
+</tr>
+<tr>
+<td>mosi</td>
+<td>pin27</td>
+</tr>
+<tr>
+<td>miso</td>
+<td>pin26</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>pin19</td>
+</tr>
+</tbody>
+</table>
+<h2>内存卡与图片准备</h2>
+<ul>
+<li>将文件中的全部导入sd卡
+<ul>
+<li>文件目录
+<ul>
+<li>all to sdcard</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>导入自定义图片
+<ul>
+<li>文件目录
+<ul>
+<li>png2dat
+<ul>
+<li>img (你所需要转换的png图片)</li>
+<li>转dat.py (修改for的个数后运行)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>得到的所有的 <em>img{i}.dat</em> 替换到sdcard</li>
+</ul>
+</li>
+</ul>
+<h2>程序准备</h2>
+<ol>
+<li>下载并安装Thonny编译器</li>
+<li>使用USB将esp32开发板与电脑相连，并在Thonny中找到该串口
+<ol>
+<li>若未找到，请自行百度，安装串口驱动</li>
+<li>开发环境搭建 参考 <a href="https://doc.itprojects.cn/0006.zhishi.esp32/02.doc/index.html#/01.dajianhuanjing">itprojects.cn</a></li>
+</ol>
+</li>
+<li>将固件 <strong>esp32-20220618-v1.19.1.bin</strong> 烧录至开发板上</li>
+<li>将 <strong>all to esp32</strong> 文件夹中的所有文件，复制到开发板中</li>
+<li>修改 <strong>weather.py</strong> 中 你的wifi名与密码 并保存</li>
+</ol>
+<h2>天气预报接口</h2>
+<ol>
+<li><a href="https://console.qweather.com/#/console?lang=zh">注册和风天气</a></li>
+<li>申请免费API接口 教程自行百度 获取key</li>
+<li>3日内天气 https://devapi.qweather.com/v7/weather/3d?location=[城市ID]&amp;key=[你的key]
+<ol>
+<li>例 济南：https://devapi.qweather.com/v7/weather/3d?location=101120101&amp;key=233233233</li>
+</ol>
+</li>
+<li>当前天气信息 https://devapi.qweather.com/v7/weather/now?location=[your_id]&amp;key=[your_key]</li>
+<li>以当前信息为例，浏览器打开网站你将看到一下信息<pre><code><div class='ace-tm'><div class='ace_static_highlight' style='counter-reset:ace_line 0'><div class='ace_line'> {&#34;code&#34;:&#34;200&#34;,&#34;updateTime&#34;:&#34;2023-01-15T09:27+08:00&#34;,&#34;fxLink&#34;:&#34;http://hfx.link/2x41&#34;,&#34;now&#34;:{&#34;obsTime&#34;:&#34;2023-01-15T09:12+08:00&#34;,&#34;temp&#34;:&#34;-5&#34;,&#34;feelsLike&#34;:&#34;-9&#34;,&#34;icon&#34;:&#34;104&#34;,&#34;text&#34;:&#34;<span class='ace_cjk' style='width:NaNpx'>阴</span>&#34;,&#34;wind360&#34;:&#34;69&#34;,&#34;windDir&#34;:&#34;<span class='ace_cjk' style='width:NaNpx'>东</span><span class='ace_cjk' style='width:NaNpx'>北</span><span class='ace_cjk' style='width:NaNpx'>风</span>&#34;,&#34;windScale&#34;:&#34;2&#34;,&#34;windSpeed&#34;:&#34;8&#34;,&#34;humidity&#34;:&#34;26&#34;,&#34;precip&#34;:&#34;0.0&#34;,&#34;pressure&#34;:&#34;1012&#34;,&#34;vis&#34;:&#34;30&#34;,&#34;cloud&#34;:&#34;98&#34;,&#34;dew&#34;:&#34;-22&#34;},&#34;refer&#34;:{&#34;sources&#34;:[&#34;QWeather&#34;,&#34;NMC&#34;,&#34;ECMWF&#34;],&#34;license&#34;:[&#34;CC BY-SA 4.0&#34;]}}
+</div></div></div></code></pre>
+</li>
+<li>确保上述操作无误后，将key与id填入代码中 [weather.py #52 #56] Ctrl+S 保存</li>
+</ol>
+<h2>运行</h2>
+<ul>
+<li>在Thonny中运行 <strong>testmain2.py</strong></li>
+</ul>
+<h2>城市ID</h2>
+<blockquote>
+<p>Ctrl+F 搜索即可</p>
+</blockquote>
+<p>北京:101010100朝阳:101010300顺义:101010400怀柔:101010500通州:101010600昌平:101010700延庆:101010800丰台:101010900石景山:101011000大兴:101011100房山:101011200密云:101011300门头沟:101011400平谷:101011500八达岭:101011600佛爷顶:101011700汤河口:101011800密云上甸子:101011900斋堂:101012000霞云岭:101012100北京城区:101012200海淀:101010200天津:101030100宝坻:101030300东丽:101030400西青:101030500北辰:101030600蓟县:101031400汉沽:101030800静海:101030900津南:101031000塘沽:101031100大港:101031200武清:101030200宁河:101030700上海:101020100宝山:101020300嘉定:101020500南汇:101020600浦东:101021300青浦:101020800松江:101020900奉贤:101021000崇明:101021100徐家汇:101021200闵行:101020200金山:101020700石家庄:101090101张家口:101090301承德:101090402唐山:101090501秦皇岛:101091101沧州:101090701衡水:101090801邢台:101090901邯郸:101091001保定:101090201廊坊:101090601郑州:101180101新乡:101180301许昌:101180401平顶山:101180501信阳:101180601南阳:101180701开封:101180801洛阳:101180901商丘:101181001焦作:101181101鹤壁:101181201濮阳:101181301周口:101181401漯河:101181501驻马店:101181601三门峡:101181701济源:101181801安阳:101180201合肥:101220101芜湖:101220301淮南:101220401马鞍山:101220501安庆:101220601宿州:101220701阜阳:101220801亳州:101220901黄山:101221001滁州:101221101淮北:101221201铜陵:101221301宣城:101221401六安:101221501巢湖:101221601池州:101221701蚌埠:101220201杭州:101210101舟山:101211101湖州:101210201嘉兴:101210301金华:101210901绍兴:101210501台州:101210601温州:101210701丽水:101210801衢州:101211001宁波:101210401重庆:101040100合川:101040300南川:101040400江津:101040500万盛:101040600渝北:101040700北碚:101040800巴南:101040900长寿:101041000黔江:101041100万州天城:101041200万州龙宝:101041300涪陵:101041400开县:101041500城口:101041600云阳:101041700巫溪:101041800奉节:101041900巫山:101042000潼南:101042100垫江:101042200梁平:101042300忠县:101042400石柱:101042500大足:101042600荣昌:101042700铜梁:101042800
+璧山:101042900丰都:101043000武隆:101043100彭水:101043200綦江:101043300酉阳:101043400秀山:101043600沙坪坝:101043700永川:101040200福州:101230101泉州:101230501漳州:101230601龙岩:101230701晋江:101230509南平:101230901厦门:101230201宁德:101230301莆田:101230401三明:101230801兰州:101160101平凉:101160301庆阳:101160401武威:101160501金昌:101160601嘉峪关:101161401酒泉:101160801天水:101160901武都:101161001临夏:101161101合作:101161201白银:101161301定西:101160201张掖:101160701广州:101280101惠州:101280301梅州:101280401汕头:101280501深圳:101280601珠海:101280701佛山:101280800肇庆:101280901湛江:101281001江门:101281101河源:101281201清远:101281301云浮:101281401潮州:101281501东莞:101281601中山:101281701阳江:101281801揭阳:101281901茂名:101282001汕尾:101282101韶关:101280201南宁:101300101柳州:101300301来宾:101300401桂林:101300501梧州:101300601防城港:101301401贵港:101300801玉林:101300901百色:101301001钦州:101301101河池:101301201北海:101301301崇左:101300201贺州:101300701贵阳:101260101安顺:101260301都匀:101260401兴义:101260906铜仁:101260601毕节:101260701六盘水:101260801遵义:101260201凯里:101260501昆明:101290101红河:101290301文山:101290601玉溪:101290701楚雄:101290801普洱:101290901昭通:101291001临沧:101291101怒江:101291201香格里拉:101291301丽江:101291401德宏:101291501景洪:101291601大理:101290201曲靖:101290401保山:101290501呼和浩特:101080101乌海:101080301集宁:101080401通辽:101080501阿拉善左旗:101081201鄂尔多斯:101080701临河:101080801锡林浩特:101080901呼伦贝尔:101081000乌兰浩特:101081101包头:101080201赤峰:101080601南昌:101240101上饶:101240301抚州:101240401宜春:101240501鹰潭:101241101赣州:101240701景德镇:101240801萍乡:101240901新余:101241001九江:101240201吉安:101240601武汉:101200101黄冈:101200501荆州:101200801宜昌:101200901恩施:101201001十堰:101201101神农架:101201201随州:101201301荆门:101201401天门:101201501仙桃:101201601潜江:101201701襄樊:101200201鄂州:101200301孝感:101200401
+黄石:101200601咸宁:101200701成都:101270101自贡:101270301绵阳:101270401南充:101270501达州:101270601遂宁:101270701广安:101270801巴中:101270901泸州:101271001宜宾:101271101内江:101271201资阳:101271301乐山:101271401眉山:101271501凉山:101271601雅安:101271701甘孜:101271801阿坝:101271901德阳:101272001广元:101272101攀枝花:101270201银川:101170101中卫:101170501固原:101170401石嘴山:101170201吴忠:101170301西宁:101150101黄南:101150301海北:101150801果洛:101150501玉树:101150601海西:101150701海东:101150201海南:101150401济南:101120101潍坊:101120601临沂:101120901菏泽:101121001滨州:101121101东营:101121201威海:101121301枣庄:101121401日照:101121501莱芜:101121601聊城:101121701青岛:101120201淄博:101120301德州:101120401烟台:101120501济宁:101120701泰安:101120801西安:101110101延安:101110300榆林:101110401铜川:101111001商洛:101110601安康:101110701汉中:101110801宝鸡:101110901咸阳:101110200渭南:101110501太原:101100101临汾:101100701运城:101100801朔州:101100901忻州:101101001长治:101100501大同:101100201阳泉:101100301晋中:101100401晋城:101100601吕梁:101101100乌鲁木齐:101130101石河子:101130301昌吉:101130401吐鲁番:101130501库尔勒:101130601阿拉尔:101130701阿克苏:101130801喀什:101130901伊宁:101131001塔城:101131101哈密:101131201和田:101131301阿勒泰:101131401阿图什:101131501博乐:101131601克拉玛依:101130201拉萨:101140101山南:101140301阿里:101140701昌都:101140501那曲:101140601日喀则:101140201林芝:101140401台北县:101340101高雄:101340201台中:101340401海口:101310101三亚:101310201东方:101310202临高:101310203澄迈:101310204儋州:101310205昌江:101310206白沙:101310207琼中:101310208定安:101310209屯昌:101310210琼海:101310211文昌:101310212保亭:101310214万宁:101310215陵水:101310216西沙:101310217南沙岛:101310220乐东:101310221五指山:101310222琼山:101310102长沙:101250101株洲:101250301衡阳:101250401郴州:101250501
+常德:101250601益阳:101250700娄底:101250801邵阳:101250901岳阳:101251001张家界:101251101怀化:101251201黔阳:101251301永州:101251401吉首:101251501湘潭:101250201南京:101190101镇江:101190301苏州:101190401南通:101190501扬州:101190601宿迁:101191301徐州:101190801淮安:101190901连云港:101191001常州:101191101泰州:101191201无锡:101190201盐城:101190701哈尔滨:101050101牡丹江:101050301佳木斯:101050401绥化:101050501黑河:101050601双鸭山:101051301伊春:101050801大庆:101050901七台河:101051002鸡西:101051101鹤岗:101051201齐齐哈尔:101050201大兴安岭:101050701长春:101060101延吉:101060301四平:101060401白山:101060901白城:101060601辽源:101060701松原:101060801吉林:101060201通化:101060501沈阳:101070101鞍山:101070301抚顺:101070401本溪:101070501丹东:101070601葫芦岛:101071401营口:101070801阜新:101070901辽阳:101071001铁岭:101071101朝阳:101071201盘锦:101071301大连:101070201锦州:101070701</p>
+
+        </article>
+      </body>
+      </html>
+
+   
+
+    <!-- footer
+   ================================================== -->
+   <footer>
+
+    <div class="footer-main">
+
+      <div class="row">  
+
+         <div class="col-four tab-full mob-full footer-info">            
+
+             <h4>关于</h4>
+
+                <p>
+               仅供学习和参考
+               </p>
+
+         </div> <!-- end footer-info -->
+
+         <div class="col-two tab-1-3 mob-1-2 site-links">
+
+           <h4>Site Links</h4>
+
+           <ul>
+             <li><a href="#">About Us</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">FAQ</a></li>
+           <li><a href="#">Terms</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+         </ul>
+
+         </div> <!-- end site-links -->  
+
+         <div class="col-two tab-1-3 mob-1-2 social-links">
+
+           <h4>Social</h4>
+
+           <ul>
+
+           <li><a href="https://space.bilibili.com/22951795">Bilibili</a></li>
+           <li><a href="https://github.com/yukModule/">Github</a></li>
+
+         </ul>
+                      
+         </div> <!-- end social links --> 
+
+         <div class="col-four tab-1-3 mob-full footer-subscribe">
+
+           <h4>Subscribe</h4>
+
+           <p>Keep yourself updated. Subscribe to our newsletter.</p>
+
+           <div class="subscribe-form">
+         
+             <form id="mc-form" class="group" novalidate="true">
+
+             <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type &amp; press enter" required=""> 
+        
+              <input type="submit" name="subscribe" >
+        
+              <label for="mc-email" class="subscribe-message"></label>
+     
+           </form>
+
+           </div>	      		
+                      
+         </div> <!-- end subscribe -->         
+
+       </div> <!-- end row -->
+
+    </div> <!-- end footer-main -->
+
+     <div class="footer-bottom">
+       <div class="row">
+
+         <div class="col-twelve">
+           <div class="copyright">
+              <span>Copyright &copy; 2017.Company name All rights reserved.</span> 
+            </div>
+
+            <div id="go-top">
+               <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+            </div>         
+         </div>
+
+       </div> 
+     </div> <!-- end footer-bottom -->  
+
+  </footer>  
+
+  <div id="preloader"> 
+     <div id="loader"></div>
+  </div> 
+
+  <!-- Java Script
+  ================================================== --> 
+  <script src="../../js/jquery-2.1.3.min.js"></script>
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+
+</body>
+
+</html>

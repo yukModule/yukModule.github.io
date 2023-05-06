@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="../../css/base.css">
+   <link rel="stylesheet" href="../../css/vendor.css">  
+   <link rel="stylesheet" href="../../css/main.css">
+        
+
+   <!-- script
+   ================================================== -->
+	<script src="../../js/modernizr.js"></script>
+	<script src="../../js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../..favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+
+   		<div class="logo">
+	         <a href="../../index.html">Author</a>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation sf-menu">
+					<li><a href="../../index.html" title="">主页</a></li>									
+					<li class="has-children">
+						<a href="../../category.html" title="">分类</a>
+						<ul class="sub-menu">
+			            <li><a href="../../category.html">Wordpress</a></li>
+			            <li><a href="../../category.html">HTML</a></li>
+			            <li><a href="../../category.html">Photography</a></li>
+			            <li><a href="../../category.html">UI</a></li>
+			            <li><a href="../../category.html">Mockups</a></li>
+			            <li><a href="../../category.html">Branding</a></li>
+			         </ul>
+					</li>
+					<li class="has-children">
+						<a href="../../single-standard.html" title="">Blog</a>
+						<ul class="sub-menu">
+			            <li><a href="../../single-video.html">Video Post</a></li>
+			            <li><a href="../../single-audio.html">Audio Post</a></li>
+			            <li><a href="../../single-gallery.html">Gallery Post</a></li>
+			            <li><a href="../../single-standard.html">Standard Post</a></li>
+			         </ul>
+					</li>
+					<li><a href="../../style-guide.html" title="">Styles</a></li>
+					<li class="has-children"><a href="../../about.html" title="">关于</a></li>	
+					<li><a href="../../contact.html" title="">Contact</a></li>										
+				</ul>
+			</nav> <!-- end main-nav-wrap -->
+
+			<div class="search-wrap">
+				
+				<form role="search" method="get" class="search-form" action="#">
+					<label>
+						<span class="hide-content">Search for:</span>
+						<input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+					</label>
+					<input type="submit" class="search-submit" value="Search">
+				</form>
+
+				<a href="#" id="close-search" class="close-btn">Close</a>
+
+			</div> <!-- end search wrap -->	
+
+			<div class="triggers">
+				<a class="search-trigger" href="#"><i class="fa fa-search"></i></a>
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+			</div> <!-- end triggers -->	
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+
+<!-- mark down
+   ================================================== -->
+
+   <!doctype html>
+   <html>
+   <head>
+     <meta charset="utf-8"/>
+     <title>LogicPen</title>
+     
+     <style>
+       html, body { margin: 0; padding: 0; background-color: #f5f5f5; }
+       .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; }
+       @media (max-width: 767px) { .markdown-body { padding: 15px; } }
+       .markdown-body {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+line-height: 1.5;
+color: #24292e;
+font-family: system-ui, -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+font-size: 16px;
+line-height: 1.5;
+word-wrap: break-word;
+}
+
+.markdown-body details {
+display: block;
+}
+
+.markdown-body summary {
+display: list-item;
+}
+
+.markdown-body a {
+background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+outline-width: 0;
+}
+
+.markdown-body strong {
+font-weight: inherit;
+font-weight: bolder;
+}
+
+.markdown-body h1 {
+font-size: 2em;
+margin: .67em 0;
+}
+
+.markdown-body img {
+border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+font-family: monospace,monospace;
+font-size: 1em;
+}
+
+.markdown-body hr {
+box-sizing: initial;
+height: 0;
+overflow: visible;
+}
+
+.markdown-body input {
+font: inherit;
+margin: 0;
+}
+
+.markdown-body input {
+overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+box-sizing: border-box;
+padding: 0;
+}
+
+.markdown-body * {
+box-sizing: border-box;
+}
+
+.markdown-body input {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+
+.markdown-body a {
+color: #0366d6;
+text-decoration: none;
+}
+
+.markdown-body a:hover {
+text-decoration: underline;
+}
+
+.markdown-body strong {
+font-weight: 600;
+}
+
+.markdown-body hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+display: table;
+content: "";
+}
+
+.markdown-body hr:after {
+clear: both;
+}
+
+.markdown-body table {
+border-spacing: 0;
+border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+padding: 0;
+}
+
+.markdown-body details summary {
+cursor: pointer;
+}
+
+.markdown-body kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+line-height: 10px;
+color: #444d56;
+vertical-align: middle;
+background-color: #fafbfc;
+border: 1px solid #d1d5da;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.markdown-body h1 {
+font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+font-weight: 600;
+}
+
+.markdown-body h2 {
+font-size: 24px;
+}
+
+.markdown-body h3 {
+font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+font-weight: 600;
+}
+
+.markdown-body h4 {
+font-size: 16px;
+}
+
+.markdown-body h5 {
+font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+font-weight: 600;
+}
+
+.markdown-body h6 {
+font-size: 12px;
+}
+
+.markdown-body p {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+padding-left: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+font-size: 12px;
+}
+
+.markdown-body pre {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+margin: 0;
+-webkit-appearance: none;
+appearance: none;
+}
+
+.markdown-body :checked+.radio-label {
+position: relative;
+z-index: 1;
+border-color: #0366d6;
+}
+
+.markdown-body hr {
+border-bottom-color: #eee;
+}
+
+.markdown-body kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+line-height: 10px;
+color: #444d56;
+vertical-align: middle;
+background-color: #fafbfc;
+border: 1px solid #d1d5da;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+display: table;
+content: "";
+}
+
+.markdown-body:after {
+clear: both;
+}
+
+.markdown-body>:first-child {
+margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+margin-top: 0;
+margin-bottom: 16px;
+}
+
+.markdown-body hr {
+height: .25em;
+padding: 0;
+margin: 24px 0;
+background-color: #e1e4e8;
+border: 0;
+}
+
+.markdown-body blockquote {
+padding: 0 1em;
+color: #6a737d;
+border-left: .25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+margin-top: 24px;
+margin-bottom: 16px;
+font-weight: 600;
+line-height: 1.25;
+}
+
+.markdown-body h1 {
+font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+padding-bottom: .3em;
+border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+font-size: 1.5em;
+}
+
+.markdown-body h3 {
+font-size: 1.25em;
+}
+
+.markdown-body h4 {
+font-size: 1em;
+}
+
+.markdown-body h5 {
+font-size: .875em;
+}
+
+.markdown-body h6 {
+font-size: .85em;
+color: #6a737d;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.markdown-body li {
+word-wrap: break-all;
+}
+
+.markdown-body li>p {
+margin-top: 16px;
+}
+
+.markdown-body li+li, .markdown-body li > ul {
+margin-top: .25em;
+}
+
+.markdown-body ul li.task-list-item {
+position: relative;
+appearance: none;
+list-style: none;
+}
+
+.markdown-body ul li.task-list-item.checked {
+text-decoration-line: line-through;
+color: #6e6e6e;
+}
+
+.markdown-body ul li.task-list-item:not(.checked) {
+color: initial;
+}
+
+.markdown-body ul li.task-list-item::before {
+content: '';
+width: 13px;
+height: 13px;
+background-color: #fff;
+position: absolute;
+left: -28px;
+top: 4px;
+border-radius: 2px;
+border: 2px solid #757575;
+}
+
+.markdown-body ul li.task-list-item.checked::before {
+background-color: #1976d2;
+border-color: #1976d2;
+}
+
+.markdown-body ul li.task-list-item.checked::after {
+content: '';
+position: absolute;
+left: -22px;
+top: 5px;
+width: 4px;
+height: 10px;
+border: solid #fff;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+
+.markdown-body dl {
+padding: 0;
+}
+
+.markdown-body dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: 600;
+}
+
+.markdown-body dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+
+.markdown-body table {
+width: 100%;
+overflow: auto;
+}
+
+.markdown-body table th {
+font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+padding: 6px 13px;
+border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+background-color: #fff;
+border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+background-color: #f6f8fa;
+}
+
+.markdown-body img {
+max-width: 100%;
+box-sizing: initial;
+background-color: #fff;
+}
+
+.markdown-body p > img {
+display: block;
+margin: 0 auto;
+}
+
+.markdown-body img[align=right] {
+padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+padding-right: 20px;
+}
+
+.markdown-body code {
+padding: .2em .4em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(27,31,35,.05);
+border-radius: 3px;
+}
+
+.markdown-body pre {
+word-wrap: normal;
+}
+
+.markdown-body pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+
+.markdown-body pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f6f8fa;
+border-radius: 3px;
+}
+
+.markdown-body pre code {
+display: inline;
+max-width: auto;
+padding: 0;
+margin: 0;
+overflow: visible;
+line-height: inherit;
+word-wrap: normal;
+background-color: initial;
+border: 0;
+}
+
+.markdown-body mark {
+display: inline-flex;
+background-color: #fff8c5;
+}
+       .ace-tm{ background: transparent!important; }.ace_static_highlight{ font-size: unset!important; }.ace_static_highlight {font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', 'Droid Sans Mono', monospace;font-size: 12px;white-space: pre-wrap}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;contain: none;}.ace_static_highlight.ace_show_gutter .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line { position: relative; }.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+     </style>
+   </head>
+   <body>
+     <article class="markdown-body">
+       <blockquote>
+<p>图片内容为第一版，oled布局以调整</p>
+</blockquote>
+<h1>MkM_LogicPen</h1>
+<p><img src="pic/p1.png" alt="1">
+<img src="pic/p2.png" alt="2"></p>
+<h2>介绍</h2>
+<p><strong>LogicPen</strong>功能简述:</p>
+<ul>
+<li>测量并显示标准TTL电平</li>
+<li>大致测量1~10kΩ范围内的电阻</li>
+<li>测量占空比</li>
+</ul>
+<h2>已知问题</h2>
+<p>当前已知且<strong>尚未解决</strong>的问题:</p>
+<ul>
+<li>当前没有将pwm波形分析功能，后续会单独写一个pwm分析的功能</li>
+</ul>
+<h2>技术协助</h2>
+<p>你可以在一下获得<strong>技术帮助</strong>:</p>
+<ul>
+<li><a href="https://github.com/yukModule/LogicPen_Raspberry_Pi_pico/">GitHub</a></li>
+<li><a href="https://space.bilibili.com/22951795">B站</a></li>
+<li><a href="https://yukmodule.github.io/">git博客</a></li>
+</ul>
+<h2>参与作者</h2>
+<ul>
+<li>MkM
+<ul>
+<li>bilibili 无我识l心空妙有</li>
+</ul>
+</li>
+</ul>
+<h2>使用许可</h2>
+<p>在该项目中你必须遵守一下条款:</p>
+<ul>
+<li>随便用，有什么问题后果自负 (oﾟvﾟ)ノ</li>
+</ul>
+<h1>安装说明</h1>
+<blockquote>
+<p>若不想造成经济损失，请仔细阅读以下内容</p>
+</blockquote>
+<h2>安装Thonny编译器</h2>
+<ul>
+<li>使用详情，参考Thonny官方教程</li>
+</ul>
+<h2>烧录固件</h2>
+<blockquote>
+<p>二选其一</p>
+</blockquote>
+<ul>
+<li>文件目录：
+<ul>
+<li>pico_mpy_firmware
+<ul>
+<li>rp2-pico-20220909-unstable-v1.19.1-389-g4903e48e3.uf2</li>
+<li>rp2-pico-20210418-v1.15.uf2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>烧录
+<ul>
+<li>按住树莓派pico的bootset键不松手，并使用usb与电脑相连</li>
+<li>当电脑出现一个新的盘时松手</li>
+<li>将其中一个固件粘贴到该盘中</li>
+<li>安全弹出该盘</li>
+</ul>
+</li>
+</ul>
+<h2>程序下载</h2>
+<blockquote>
+<p>全部下载</p>
+</blockquote>
+<ul>
+<li>文件目录：
+<ul>
+<li>Download_to_Pico
+<ul>
+<li>logic_pen.py</li>
+<li>ssd1306.py</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>运行测试</h2>
+<ul>
+<li>运行logic_pen.py即可</li>
+</ul>
+<h2>开机运行</h2>
+<ul>
+<li>在保证以上没有问题的情况下，在pico根目录新建main.py文件，并保存一下内容</li>
+</ul>
+<pre><code class="language-python"><div class='ace-tm'><div class='ace_static_highlight' style='counter-reset:ace_line 0'><div class='ace_line'><span class='ace_keyword'>import</span> <span class='ace_identifier'>logic_pen</span>
+</div></div></div></code></pre>
+<h2>二次进入系统</h2>
+<p>当需要进入mpy系统修改程序时，而开机进入死循环无法进入</p>
+<ul>
+<li>从新烧录：
+<ul>
+<li>pico_mpy_firmware
+<ul>
+<li>flash_nuke.uf2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>删除 main.py</li>
+</ul>
+<h1>焊接说明</h1>
+<h2>注意事项</h2>
+<ul>
+<li>探针未在pcb模拟视图体现出，请准备<strong>直径1.6mm，高25mm的金属探针</strong></li>
+<li>在<strong>电源开关处有留出异形铜板</strong>，请在该处焊接合适数量的<strong>排针</strong></li>
+<li>自行准备适合的<strong>锂电池</strong>及其<strong>充电保护板</strong></li>
+<li>自行准备0.91寸oled iic ssd1306 显示屏
+<ul>
+<li>以屏幕在右管脚在左为准，管脚从上到下
+<ul>
+<li>SDA SCL VCC GND</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>pcb板厚我采用的是1.6mm，建议按照个人需求自行修改</li>
+</ul>
+<h2>物料清单</h2>
+<table>
+<thead>
+<tr>
+<th>标准器件</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Res_0805 10k</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Res_0805 1k</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Res_0805 100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Res_0805 10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PTS525SM15SMTR2LFS</td>
+<td>4</td>
+</tr>
+<tr>
+<td>MSK-12C01-07</td>
+<td>4</td>
+</tr>
+<tr>
+<td>[插件] 2.54mm 1*20P 直排母-H5.0 (可选)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>KH-2.54FH-1X4P-H8.5 (可选)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2>原理图</h2>
+<p><img src="pic/sche.png" alt="sche"></p>
+<h2>PCB</h2>
+<p><img src="pic/pcb1.png" alt="pcb">
+<img src="pic/pcb2.png" alt="pcb"></p>
+<h2>3D视图</h2>
+<p><img src="pic/3d.png" alt="3d"></p>
+
+     </article>
+   </body>
+   </html>
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">  
+
+	      	<div class="col-four tab-full mob-full footer-info">            
+
+	            <h4>About Our Site</h4>
+
+	               <p>
+		          	Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
+		          	</p>
+
+		      </div> <!-- end footer-info -->
+
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+	      		<h4>Site Links</h4>
+
+	      		<ul>
+	      			<li><a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+
+	      	</div> <!-- end site-links -->  
+
+	      	<div class="col-two tab-1-3 mob-1-2 social-links">
+
+	      		<h4>Social</h4>
+
+	      		<ul>
+	      			<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Dribbble</a></li>
+						<li><a href="#">Google+</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+	      	           	
+	      	</div> <!-- end social links --> 
+
+	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
+
+	      		<h4>Subscribe</h4>
+
+	      		<p>Keep yourself updated. Subscribe to our newsletter.</p>
+
+	      		<div class="subscribe-form">
+	      	
+	      			<form id="mc-form" class="group" novalidate="true">
+
+							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type &amp; press enter" required=""> 
+	   		
+			   			<input type="submit" name="subscribe" >
+		   	
+		   				<label for="mc-email" class="subscribe-message"></label>
+			
+						</form>
+
+	      		</div>	      		
+	      	           	
+	      	</div> <!-- end subscribe -->         
+
+	      </div> <!-- end row -->
+
+   	</div> <!-- end footer-main -->
+
+      <div class="footer-bottom">
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>Copyright &copy; 2017.Company name All rights reserved.</span> 
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> 
+      </div> <!-- end footer-bottom -->  
+
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="../../js/jquery-2.1.3.min.js"></script>
+   <script src="../../js/plugins.js"></script>
+   <script src="../../js/main.js"></script>
+
+</body>
+
+</html>
